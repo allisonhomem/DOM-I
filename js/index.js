@@ -73,3 +73,36 @@ getStarted.textContent = siteContent["cta"]["button"];
 //Code Image
 const codeImage = document.getElementById('cta-img');
 codeImage.setAttribute('src', siteContent["cta"]["img-src"]);
+
+//Main Content h4 headers and paragraphs
+const textBoxes = document.getElementsByClassName('text-content');
+//Features
+const featuresBox = textBoxes[0];
+const featuresTitle = featuresBox.querySelector('h4');
+const featuresParagraph = featuresBox.querySelector('p');
+featuresTitle.textContent = siteContent["main-content"]["features-h4"];
+featuresParagraph.textContent = siteContent["main-content"]["features-content"];
+//About
+const aboutBox = textBoxes[1];
+const aboutTitle = aboutBox.querySelector('h4');
+const aboutParagraph = aboutBox.querySelector('p');
+aboutTitle.textContent = siteContent["main-content"]["about-h4"];
+aboutParagraph.textContent = siteContent["main-content"]["about-content"];
+//Services
+const servicesBox = textBoxes[2];
+const servicesTitle = servicesBox.querySelector('h4');
+const servicesParagraph = servicesBox.querySelector('p');
+servicesTitle.textContent = siteContent["main-content"]["services-h4"];
+servicesParagraph.textContent = siteContent["main-content"]["services-content"];
+//Product
+const productBox = textBoxes[3];
+const productTitle = productBox.querySelector('h4');
+const productParagraph = productBox.querySelector('p');
+productTitle.textContent = siteContent["main-content"]["product-h4"];
+productParagraph.textContent = siteContent["main-content"]["product-content"];
+//Vision
+const visionBox = textBoxes[4];
+const visionTitle = visionBox.querySelector('h4');
+const visionParagraph = visionBox.querySelector('p');
+visionTitle.textContent = siteContent["main-content"]["vision-h4"];
+visionParagraph.textContent = siteContent["main-content"]["vision-content"];
