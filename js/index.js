@@ -111,3 +111,20 @@ visionParagraph.textContent = siteContent["main-content"]["vision-content"];
 const midImgBanner = document.getElementById('middle-img');
 midImgBanner.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
 
+//Contact Section
+const contactBoxes = document.getElementsByClassName('contact');
+const contactBox = contactBoxes[0];
+const contactTitle = contactBox.querySelector('h4');
+const contactParagraphs = contactBox.querySelectorAll('p');
+const contactPOne = contactParagraphs[0];
+const contactPTwo = contactParagraphs[1];
+const contactPThree = contactParagraphs[2];
+contactTitle.textContent = siteContent["contact"]["contact-h4"];
+contactPOne.textContent = siteContent["contact"]["address"];
+contactPTwo.textContent = siteContent["contact"]["phone"];
+contactPThree.textContent = siteContent["contact"]["email"];
+
+//Footer
+const footer = document.querySelector('footer');
+const copyright = footer.querySelector('p');
+copyright.textContent = siteContent["footer"]["copyright"];
