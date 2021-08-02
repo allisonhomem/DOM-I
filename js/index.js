@@ -37,6 +37,27 @@ const siteContent = {
   },
 };
 
+
+//Title
+const title = document.querySelector('title');
+title.textContent = "Great Idea!";
+
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
-logo.setAttribute('src', siteContent["nav"]["img-src"])
+logo.setAttribute('src', siteContent["nav"]["img-src"]);
+
+//Nav bar
+const navBar = document.querySelectorAll('a');
+const navOne = navBar[0];
+const navTwo = navBar[1];
+const navThree = navBar[2];
+const navFour = navBar[3];
+const navFive = navBar[4];
+const navSix = navBar[5];
+
+navOne.textContent = siteContent["nav"]["nav-item-1"];
+navTwo.textContent = siteContent["nav"]["nav-item-2"];
+navThree.textContent = siteContent["nav"]["nav-item-3"];
+navFour.textContent = siteContent["nav"]["nav-item-4"];
+navFive.textContent = siteContent["nav"]["nav-item-5"];
+navSix.textContent = siteContent["nav"]["nav-item-6"];
