@@ -48,12 +48,19 @@ logo.setAttribute('src', siteContent["nav"]["img-src"]);
 
 //Nav bar
 const navBar = document.querySelectorAll('a');
+
 const navOne = navBar[0];
+navOne.style.color = 'green';
 const navTwo = navBar[1];
+navTwo.style.color = 'green';
 const navThree = navBar[2];
+navThree.style.color = 'green';
 const navFour = navBar[3];
+navFour.style.color = 'green';
 const navFive = navBar[4];
+navFive.style.color = 'green';
 const navSix = navBar[5];
+navSix.style.color = 'green';
 
 navOne.textContent = siteContent["nav"]["nav-item-1"];
 navTwo.textContent = siteContent["nav"]["nav-item-2"];
@@ -61,6 +68,14 @@ navThree.textContent = siteContent["nav"]["nav-item-3"];
 navFour.textContent = siteContent["nav"]["nav-item-4"];
 navFive.textContent = siteContent["nav"]["nav-item-5"];
 navSix.textContent = siteContent["nav"]["nav-item-6"];
+
+let navigation = document.querySelector('nav');
+let newerNav = document.createElement('a');
+newerNav.textContent = "Shop";
+let newestNav = document.createElement('a');
+newestNav.textContent = "Play";
+navigation.appendChild(newerNav);
+navigation.appendChild(newestNav);
 
 //Main Site Header
 const ctaHeader = document.querySelector('h1');
