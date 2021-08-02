@@ -106,3 +106,8 @@ const visionTitle = visionBox.querySelector('h4');
 const visionParagraph = visionBox.querySelector('p');
 visionTitle.textContent = siteContent["main-content"]["vision-h4"];
 visionParagraph.textContent = siteContent["main-content"]["vision-content"];
+
+//Middle Image Banner
+const midImgBanner = document.getElementById('middle-img');
+midImgBanner.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
+
